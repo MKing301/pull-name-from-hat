@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	    <!-- Local Stylesheet -->
+        <link rel= "stylesheet" href= "style.css">
+        
+        <!-- Local JS -->
+        <script type = "text/javascript" src = "app.js"></script>
+	
+
+	    <!-- Bootstrap JS/CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  		
+        <title>Pull Name</title>
+	</head>
+  	<body>
+		<div class="container">
+			<div id="add-list-box">
+				<div class="list-box-header">
+  					<h5>Name(s) in the Hat</h5>
+  				</div>  <!-- end list-box-header div -->
+		    	<ul id="hatList">
+		    	</ul>
+              </div> <!-- end list-box div -->
+              <div id="pull-list-box">
+				<div class="list-box-header">
+  					<h5>Pulled Name(s)</h5>
+  				</div>  <!-- end list-box-header div -->
+		    	<ul id="pulledList">
+		    	</ul>
+		  	</div> <!-- end list-box div -->
+		  	<div class="page-content">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="nameHelp" onfocus="if(this.value=='A new value') this.value='';" placeholder="Enter name">
+                    <small id="nameHelp" class="form-text text-muted">Add one name at a time please.</small>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-primary" onclick="ButtonClick_Add()">Add</button>
+                    <button type="submit" class="btn btn-outline-secondary" onclick="ButtonClick_Pull()">Pull</button>
+                    <button type="submit" class="btn btn-outline-danger" onclick="ButtonClick_Clear()">Clear</button>
+                    <button type="submit" class="btn btn-danger" onclick="ButtonClick_Reset()">Reset</button>
+                </div>
+		    </div>  <!-- end page content div -->
+	    </div>  <!-- end container div -->
+  </body>
+</html>
