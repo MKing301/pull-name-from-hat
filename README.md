@@ -17,3 +17,5 @@ CSS - style.css contains the styling for the web page
 
 ## Installation
 Clone or download [this repository](https://github.com/MKing301/pull-name-from-hat) and open the pull_name.html file in your browser.
+
+NOTE:  If you download the zip file, be sure to extract all content to the same location.
